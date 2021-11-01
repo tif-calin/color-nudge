@@ -20,7 +20,7 @@ const ColorNudger = () => {
   const renderButton = offset => {
     const seed = Math.round(Math.exp(offset + currentSteps, offset + currentSteps)) % Number.MAX_SAFE_INTEGER;
 
-    const decrement = seed % 2 === 0;
+    const decrement = Boolean(Math.floor(seed / 100) % 2);
     const component = colorComponents[seed % colorComponents.length];
     const space = ['red', 'green', 'blue'].includes(component) ? 'rgb' : 'hsl';
 

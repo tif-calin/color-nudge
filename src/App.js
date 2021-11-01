@@ -26,7 +26,7 @@ const App = () => {
       </main>
 
       <footer>
-        <Copyleft/> steal this
+        <Copyleft/> <a href="https://github.com/tif-calin/color-nudge" target="_blank" rel="noreferrer" >steal this</a>
       </footer>
     </div>
   )
